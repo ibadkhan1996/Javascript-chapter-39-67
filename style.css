@@ -1,0 +1,23 @@
+.mobile {
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+.mobile:hover{
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
+.shown {
+    display: table-row;
+}
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+td,th {
+    border: 1px solid grey;
+    padding: 5px;
+}

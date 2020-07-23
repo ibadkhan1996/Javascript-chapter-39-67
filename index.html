@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="#" onclick='alert("Onclick Event")'>Click here</a>
+    <br />
+    <img src="images/mobile1.png" alt="" class="mobile" onclick="thanks()">
+    <img src="images/mobile2.png" alt="" class="mobile" onclick="thanks()">
+    <img src="images/mobile3.png" alt="" class="mobile" onclick="thanks()">
+    <img src="images/mobile4.png" alt="" class="mobile" onclick="thanks()">
+    <br />
+    <table>
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+        </tr>
+        <tr id="0">
+            <td>0</td>
+            <td>John</td>
+            <td>10</td>
+            <td><button onclick="deleteRow('0')">Delete</button></td>
+        </tr>
+        <tr id="1">
+            <td>1</td>
+            <td>Doe</td>
+            <td>9</td>
+            <td><button onclick="deleteRow('1')">Delete</button></td>
+        </tr>
+        <tr id="2">
+            <td>2</td>
+            <td>Mark</td>
+            <td>10</td>
+            <td><button onclick="deleteRow('2')">Delete</button></td>
+        </tr>
+        <tr id="3">
+            <td>3</td>
+            <td>James</td>
+            <td>8</td>
+            <td><button onclick="deleteRow('3')">Delete</button></td>
+        </tr>
+        <tr id="4">
+            <td>4</td>
+            <td>Myers</td>
+            <td>7</td>
+            <td><button onclick="deleteRow('4')">Delete</button></td>
+        </tr>
+        <tr id="5">
+            <td>5</td>
+            <td>Duckett</td>
+            <td>9</td>
+            <td><button onclick="deleteRow('5')">Delete</button></td>
+        </tr>
+        <tr id="6">
+            <td>6</td>
+            <td>Bill</td>
+            <td>8</td>
+            <td><button onclick="deleteRow('6')">Delete</button></td>
+        </tr>
+        <tr id="7">
+            <td>7</td>
+            <td>Jack</td>
+            <td>10</td>
+            <td><button onclick="deleteRow('7')">Delete</button></td>
+        </tr>
+        <tr id="8">
+            <td>8</td>
+            <td>Chris</td>
+            <td>7</td>
+            <td><button onclick="deleteRow('8')">Delete</button></td>
+        </tr>
+        <tr id="9">
+            <td>9</td>
+            <td>Tom</td>
+            <td>7</td>
+            <td><button onclick="deleteRow('9')">Delete</button></td>
+        </tr>
+        <tr>
+            <td colspan="4"><button onclick="undoRow()">Undo</button></td>
+        </tr>
+    </table>
+    <br />
+    <img src="images/car1.jpg" id="img" onmouseover="changeImg('images/car2.jpg')"
+        onmouseout="changeImg('images/car1.jpg')" alt="car" width="250px" height="250px">
+    <br />
+    <div>
+        <p id="number">0</p>
+        <button onclick="counter(1)">Increase</button>
+        <button onclick="counter(-1)">Decrease</button>
+    </div><br />
+    <div>
+        <form action="" method="get" onsubmit="getDetails()">
+            <fieldset>
+                <legend>Signup Form</legend>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="emailID">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password">
+                <input type="submit" value="Submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <h3>Item Details</h3>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit... <a href="javascript:void(0)"
+                onclick="expandPara()">Read more</a></p>
+    </div>
+    <div>
+        <form action="javascript:void(0)" method="get" onsubmit="appendDetail()" id="form">
+            <fieldset>
+                First Name:
+                <input type="text" name="firstName" id="firstName"><br />
+                Last Name:
+                <input type="text" name="lastName" id="lastName1"><br />
+                Email:
+                <input type="email" name="email" id="emailStudent"><br />
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+        <table class="hidden" id="table">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+            </tr>
+            <tr id="student1">
+                <td id="studentFirstName"></td>
+                <td id="studentLastName"></td>
+                <td id="studentEmail"></td>
+                <td><button onclick="editRow()">Edit</button></td>
+                <td><button onclick="deleteRow('student1')">Delete</button></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h1> DOM </h1>
+        <div id="form-content" class="content">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" />
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" />
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+        </div>
+        <div id="main-content" class="content">
+            <p class="render"> First Name : Alex</p>
+            <p class="render" id="lastName">Last Name: Bank</p>
+            <p class="render"> Email : alexbank@example.com</p>
+            <p class="render"> Country : Pakistan </p>
+            <p class="render"> contact : +92 300 1234567</p>
+        </div>
+    </div>
+
+</body>
+<script src="app.js"></script>
+
+</html>
